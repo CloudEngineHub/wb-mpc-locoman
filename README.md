@@ -1,6 +1,8 @@
 # Whole-Body MPC for Loco-Manipulation
 
-Official code for the paper: [Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation](https://lukasmolnar.github.io/wb-mpc-locoman/).
+Official code for the paper: **Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation**, IEEE Robotics and Automation Letters (RA-L) 2025. Lukas Molnar, Jin Cheng, Gabriele Fadini, Dongho Kang, Fatemeh Zargarbashi, Stelian Coros. *ETH Zurich*
+
+[<u>Paper</u>](https://ieeexplore.ieee.org/document/11266934) | [<u>Video</u>](https://www.youtube.com/watch?v=glWWE-754mI&t=16s) | [<u>Website</u>](https://lukasmolnar.github.io/wb-mpc-locoman/)
 
 <p float="left">
   <img src="utils/media/b2_z1_tracking.gif" width="49%" />
@@ -71,3 +73,35 @@ Instead of solving the full NLP, it is converted to a Sequential Quadruatic Prog
 Currently code-generation is only supported for **Fatrop**, since it showed the most promising results in terms of solve-time and convergence. See the `/codegen` folder for how to generate C code for the solver and compile it to a shared library.
 
 For hardware deployment the shared library can be loaded with `casadi::external` in C++. This allows for straight forward deployment without having to reformulate the optimization problem in C++. It also allows for real-time parameter tuning.
+
+## Citation
+
+If you use this code in your research, please cite our paper:
+```bibtex
+@article{wb-mpc-locoman,
+  author={Molnar, Lukas and Cheng, Jin and Fadini, Gabriele and Kang, Dongho and Zargarbashi, Fatemeh and Coros, Stelian},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Whole-Body Inverse Dynamics MPC for Legged Loco-Manipulation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Dynamics;Robots;Robot kinematics;Manipulator dynamics;Legged locomotion;Force;Quadrupedal robots;Foot;Real-time systems;Planning;Legged Robots;Mobile Manipulation;Whole-Body Motion Planning and Control},
+  doi={10.1109/LRA.2025.3636005}
+}
+```
+
+## License
+
+This codebase is under [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/deed.en). You may not use the material for commercial purposes, e.g., to make demos to advertise your commercial products.
+
+
+## Contact
+
+Feel free to open an issue or discussion if you encounter any problems or have questions about this project.
+
+For collaborations, feedback, or further inquiries, please reach out to:
+
+- Lukas Molnar: [lukas.molnar@bluewin.ch](mailto:lukas.molnar@bluewin.ch).
+
+We welcome contributions and are happy to support the community in building upon this work!
