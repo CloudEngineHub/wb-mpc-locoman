@@ -90,11 +90,6 @@ If you use this code in your research, please cite our paper:
   doi={10.1109/LRA.2025.3636005}}
 ```
 
-## License
-
-This codebase is under [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/deed.en). You may not use the material for commercial purposes, e.g., to make demos to advertise your commercial products.
-
-
 ## Contact
 
 Feel free to open an issue or discussion if you encounter any problems or have questions about this project.
